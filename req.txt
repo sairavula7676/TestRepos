@@ -1,0 +1,41 @@
+
+1. Upload records to call list YYY:
+	1.1 Process error results
+	1.2 Get the job id
+
+1. 1234567890 Sai	GA
+2. 111115555  Hubert	FL
+3. 3332255669 Lavanya
+
+[SR - All columns needs to be present in the file otherwise API is returning error saying "Invalid column mapping".]
+
+jobId: XXX
+sourceId: 
+importStatus: true (what happens if API returns false? were records uploaded?)
+procRecords: 3
+validRecords: 1
+invalidRecords: 2
+errorResults: [
+	recordNumber: 2 (or maybe 1 if it start in 0)
+	error: invalid phone number
+	errorValues: 111115555,
+
+	recordNumber: 3
+	error: no State
+	errorValue:
+]
+
+2. Call to /lists/call-lists/jobs/XXX -- keep calling this (every 5 minutes) until the response has "isComplete" set to true
+or isCancelled = true. Verify the listID: YYY
+
+3. Verify that Sai is included in call list.
+
+4. Remove member from call list
+	Remove Sai record.
+
+5. Verify Sai is NOT included in call list.
+
+6. Retrieve call attempt results: /lists/call-lists/{call list ID YYY}/attempts 
+
+
+

@@ -1,0 +1,57 @@
+
+Personal Access Token - 
+glft-kULfyytszsLXxSc8MyxL
+glpat-E2Tc3YkrrFppxjvFmfgu
+
+postman
+saikravula
+Sumelaredy7676@!
+
+CXone account- 
+https://na1.nice-incontact.com/admin/#/userManagement/update
+sai.ravula@optum.com
+Sumelaredy7676@!
+
+AVD Credentials
+Subscription Username: sravul11@devhealthcareit.onmicrosoft.com
+AVD Username:    sravul11@clouddevazr.healthcareit.net
+Password: Y&Ebk^xK@xx9PqGDL7ydQp
+Workspace URL: https://rdweb.wvd.microsoft.com
+
+
+client id: 
+56768e9f-a86d-4f2e-a58a-ecb260ffab93
+client secret: 
+gEkTgy7HziDWf7naOw4eMQ==
+
+Access Key Id - 
+ZLHN2RNZRJ7G2NOMUCXOJKXANIHALSEHSONWGBQKM7V6MZUC5DCQ====
+Secret Access key - 
+OWPFYOEOIIEE5E4PE7VH2ZLWHH74IW7WNJCXFJGPQEXRUNXVE3MA====
+
+
+Campaigns -> Skills (billing, coolection, reminders etc) -> Lists -> Members
+send member and receive
+agent r
+admin lv
+
+
+---------------------------------------------------------------------------------------------
+ 1. send members to different campaigns
+ 2. remove member from a campaign
+ 3. read call result (call disposition) for EACH call attempt (e.g. busy, answer machine, connected to agent, etc). We need you to get the 
+    list of values that will be returned by the API as call dispositions. If that is not standard (documented) then we will need that 
+    from Gretchen or Lucas or someone from CXone doing that implementation
+ 4. Schedule a callback (sending members in task number 1 do not require a call datetime to call a member, but for the callback we have 
+    to send the same data we send in task 1 plus the date and time the call must be placed)
+----------------------------------------------------------------------------------------------
+
+
+List Id: 234865
+ListName: 2024-04-04 - 20689163 - CHC_UCare_MD_PC_NoAgent
+
+
+
+
+
+
