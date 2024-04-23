@@ -1,0 +1,109 @@
+// Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
+    public class ContactRecord
+    {
+        public string externalId { get; set; }
+        public string score { get; set; }
+        public string customer1 { get; set; }
+        public string customer2 { get; set; }
+        public string callerId { get; set; }
+        public string priority { get; set; }
+        public string complianceReq { get; set; }
+        public string firstName { get; set; }
+        public string lastName { get; set; }
+        public string address { get; set; }
+        public string city { get; set; }
+        public string state { get; set; }
+        public string zip { get; set; }
+        public string timeZone { get; set; }
+        public string confirmReq { get; set; }
+        public string agentId { get; set; }
+        public string overrideFinalization { get; set; }
+        public string callRequestTime { get; set; }
+        public string callRequestStaleMins { get; set; }
+        public string notes { get; set; }
+        public DateTime expirationDate { get; set; }
+        public string icAttempts { get; set; }
+        public string icFinalStatus { get; set; }
+        public string icAssignedSkillId { get; set; }
+        public string icConfirmationReq { get; set; }
+        public string icComplianceRecord { get; set; }
+        public string icPriority { get; set; }
+        public string icSourceActive { get; set; }
+        public string icSourceRemoved { get; set; }
+        public string icTimeZoneNames { get; set; }
+        public string icTargetAgent { get; set; }
+        public string icTargetAgentName { get; set; }
+        public DateTime icDateOfLastCall { get; set; }
+        public string icLastCallDuration { get; set; }
+        public string icSystemClassification { get; set; }
+        public string icSystemClassificationName { get; set; }
+        public string icAgentDisposition { get; set; }
+        public string icAgentDispositionDesc { get; set; }
+        public string icAgentNo { get; set; }
+        public string icAgentName { get; set; }
+        public string icCallNotes { get; set; }
+        public string icCommitmentAmount { get; set; }
+        public string icCallerIdUsed { get; set; }
+        public string icDeliveredComplianceRecord { get; set; }
+        public string icDeliveredConfirmationRequired { get; set; }
+        public string icContactDeliveryType { get; set; }
+        public string icDeliveredPriority { get; set; }
+        public string icDeliveredAsCallback { get; set; }
+        public string icDeliveredAgentSpecific { get; set; }
+        public string icCallbackDateTime { get; set; }
+        public string icCallbackAgent { get; set; }
+        public string icCallbackAgentName { get; set; }
+        public string icCallbackNumber { get; set; }
+        public string icCallbackNotes { get; set; }
+        public DateTime icCreateDate { get; set; }
+        public DateTime icModifiedDate { get; set; }
+        public string icProspectiveContactDestValue { get; set; }
+        public string icProspectiveContactDestDesc { get; set; }
+        public string icProspectiveContactDestType { get; set; }
+        public DateTime icProspectiveContactExpireDate { get; set; }
+        public string icCallRequestTime { get; set; }
+        public string icCallRequestStaleMins { get; set; }
+        public List<OtherField> otherFields { get; set; }
+    }
+
+    public class OtherField
+    {
+        public string fieldName { get; set; }
+        public string fieldMapping { get; set; }
+        public string fieldValue { get; set; }
+    }
+
+    public class ResultSet
+    {
+        public string listName { get; set; }
+        public DateTime lastPollTime { get; set; }
+        public string prospectiveContactCount { get; set; }
+        public string status { get; set; }
+        public string totalRecords { get; set; }
+        public string invalidRecords { get; set; }
+        public string validRecords { get; set; }
+        public string finalizedRecords { get; set; }
+        public DateTime createDate { get; set; }
+        public DateTime uploadDate { get; set; }
+        public DateTime updateDate { get; set; }
+        public string removeDate { get; set; }
+        public DateTime listExpirationDate { get; set; }
+        public List<Skill> skills { get; set; }
+        public List<ContactRecord> contactRecords { get; set; }
+    }
+
+    public class Root
+    {
+        public ResultSet resultSet { get; set; }
+    }
+
+    public class Skill
+    {
+        public string skillId { get; set; }
+        public string skillName { get; set; }
+        public string totalRecords { get; set; }
+        public string freshRecords { get; set; }
+        public string finalizedRecords { get; set; }
+        public string retriedRecords { get; set; }
+    }
+
